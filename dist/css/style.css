@@ -1003,7 +1003,7 @@ li {
 }
 
 .team__header {
-  margin-bottom: 200px;
+  margin-bottom: 180px;
 }
 
 .team__slider {
@@ -1013,6 +1013,7 @@ li {
 }
 
 .team__item {
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -1600,7 +1601,7 @@ li {
   }
 
   .team__header {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 
   .teamplate__photo {
@@ -1822,7 +1823,7 @@ li {
   }
 
   .team__header {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .footer {
