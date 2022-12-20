@@ -1,0 +1,108 @@
+.about {
+  background-image: url(../img/sky_1.png);
+  background-size: contain;
+  background-position: 0 292px;
+  background-repeat: no-repeat;
+  padding-bottom: 180px;
+  position: relative;
+
+  @media(max-width:$md3) {
+    padding-bottom: 100px;
+  }
+
+  @media(max-width:$md4) {
+    padding-bottom: 60px;
+  }
+
+  @media(max-width:$md5) {
+    padding-bottom: 50px;
+  }
+
+  &__elipse {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, -35%);
+    width: 50%;
+    min-width: 450px;
+    overflow: hidden;
+
+    img {
+      max-width: 1125px;
+      width: 100%;
+      height: auto;
+
+      @media(max-width:$md2) {
+        position: relative;
+        right: -50%;
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 97px;
+  }
+
+  &__text {
+    max-width: 1022px;
+    width: 100%;
+    margin-bottom: 145px;
+
+    @media(max-width:$md3) {
+      margin-bottom: 80px;
+    }
+
+    @media(max-width:$md4) {
+      margin-bottom: 50px;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__video {
+    height: 514px;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 28px 7px rgba(186, 96, 254, 1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media(max-width:$md4) {
+      height: 300px;
+    }
+
+    @media(max-width:$md5) {
+      max-width: 300px;
+      height: 150px;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__planet {
+    max-width: 486px;
+    min-width: 135px;
+    position: absolute;
+    top: 35px;
+    right: 65px;
+    z-index: 2;
+    width: 50%;
+
+    @media(max-width:$md2) {
+      right: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

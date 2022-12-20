@@ -1,0 +1,242 @@
+.tokenomics {
+  position: relative;
+  padding-bottom: 150px;
+
+
+  // &__elipse {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   transform: translate(-30%, -35%);
+  // }
+  &__elipse {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0%, -35%);
+    width: 50%;
+    min-width: 250px;
+    overflow: hidden;
+
+    img {
+      max-width: 1125px;
+      width: 100%;
+      height: auto;
+
+      @media(max-width:$md2) {
+        position: relative;
+        left: -50%;
+      }
+    }
+  }
+
+  &__ufo {
+    max-width: 704px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__header {
+    margin-bottom: 200px;
+
+    @media(max-width:$md2) {
+      margin-bottom: 100px;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__number {
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto 140px;
+
+    @media(max-width:$md2) {
+      margin-bottom: 70px;
+    }
+
+    @media(max-width:$md5) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+
+    input {
+      padding: 20px 40px;
+
+      @media(max-width:$md3) {
+        font-size: 18px;
+      }
+
+      @media(max-width:$md5) {
+        font-size: 14px;
+      }
+
+      @media(max-width:$md6) {
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__btn {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    position: relative;
+    color: #fff;
+    padding: 20px 30px;
+    max-width: 416px;
+    width: 100%;
+    cursor: pointer;
+
+    @media(max-width:$md2) {
+      max-width: fit-content;
+    }
+
+    @media(max-width:$md3) {
+      font-size: 18px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @media(max-width:$md4) {
+      padding: 20px 15px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #BA60FE;
+      filter: blur(4.5px);
+    }
+
+    &>* {
+      position: relative;
+      z-index: 2;
+    }
+
+    span {
+      margin-right: 10px;
+
+      @media(max-width:$md4) {
+        display: none;
+      }
+    }
+  }
+}
+
+.tokenomics {
+
+  &__stat {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__stat-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__stat-progress {
+    height: 390px;
+    position: relative;
+    width: 67px;
+    margin: 0 auto 40px;
+
+    @media(max-width:$md5) {
+      width: 33px;
+      height: 165px;
+      margin: 0 auto 10px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(205, 219, 255, 0.5);
+      filter: blur(9.5px);
+
+      @media(max-width:$md5) {
+        filter: blur(2.5px);
+      }
+
+    }
+  }
+
+  &__stat-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #A32DFC 0%, #59D0F0 100%);
+    filter: blur(4.5px);
+
+    @media(max-width:$md5) {
+      filter: blur(2.5px);
+    }
+  }
+
+  &__stat-count {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: var(--color-dark);
+    z-index: 2;
+
+    @media (max-width: $md5) {
+      bottom: 5px;
+      line-height: 1.2;
+      font-size: 15px;
+    }
+  }
+
+  &__stat-label {
+    line-height: 1.2;
+
+    @media(max-width:$md5) {
+      position: absolute;
+      top: calc(100% + 40px);
+      left: 50%;
+      white-space: nowrap;
+      transform: translate(-54%, 0%) rotate(-90deg)
+    }
+  }
+}
