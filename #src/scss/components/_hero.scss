@@ -12,22 +12,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+
+    @media(max-width: $md3) {
+      background-position: center;
+    }
+
+    @media(max-width:$md5) {
+      min-height: 430px;
+      padding: 0;
+      background-position: top 0 right 15%;
+    }
+
+    @media(max-width:$md6) {
+      // 
+      background-position: top 0 right 13%;
+    }
   }
 
-  @media(max-width: $md3) {
-    background-position: center;
-  }
-
-  @media(max-width:$md5) {
-    min-height: 430px;
-    padding: 0;
-    background-position: top 0 right 15%;
-  }
-
-  @media(max-width:$md6) {
-    // 
-    background-position: top 0 right 13%;
-  }
 
   &__logo {
     max-width: 497px;

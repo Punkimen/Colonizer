@@ -185,6 +185,7 @@ li {
 }
 
 .page {
+  overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
   width: 100%;
@@ -1425,7 +1426,7 @@ li {
     display: block;
   }
 
-  .hero {
+  .hero__bg {
     background-position: center;
   }
 
@@ -1637,7 +1638,7 @@ li {
     font-size: 15px;
   }
 
-  .hero {
+  .hero__bg {
     min-height: 430px;
     padding: 0;
     background-position: top 0 right 15%;
@@ -1840,7 +1841,7 @@ li {
     left: 15px;
   }
 
-  .hero {
+  .hero__bg {
     background-position: top 0 right 13%;
   }
 
