@@ -8,12 +8,30 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div class="page" style="max-width: 1920px; margin:0 auto;
-    width: 100%;">
+    <style>
+        /* .hero-slide__bg {
+            height: 100%;
+            background-position: center;
+            background-image: url(../img/stars_bg.png);
+            background-size: cover;
+            background-repeat: repeat-y;
+        } */
+    </style>
+    <div class="page" style="position: relative">
+        <div class="bg""></div>
+        <!-- <div class=" app">
+            <div data-scene data-speed="0.2">rolly.js</div>
+            <div data-scene>provides…</div>
+            <div>some delicious…</div>
+            <div data-scene data-speed="1.4">very delicious…</div>
+            <div data-scene data-speed="1.6">parallax effects ❤️</div>
+        </div> -->
         @@include('components/_header.html')
         @@include('components/_hero.html')
         @@include('components/_about.html')
@@ -25,8 +43,13 @@
         @@include('components/_footer.html')
         @@include('components/_modal.html')
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/bgscroll.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -15,7 +15,9 @@
     background-size: 100%;
   }
 
-  &__social {}
+  &__social {
+    max-width: fit-content;
+  }
 
   &__social-elem {
     &:not(:last-child) {
