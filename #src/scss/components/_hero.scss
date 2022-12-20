@@ -1,34 +1,27 @@
 .hero {
   position: relative;
   padding: 130px 0;
+  background: url(../img/hero_bg.png), #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 
-  &__bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(../img/hero_bg.png), #111;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-
-    @media(max-width: $md3) {
-      background-position: center;
-    }
-
-    @media(max-width:$md5) {
-      min-height: 430px;
-      padding: 0;
-      background-position: top 0 right 15%;
-    }
-
-    @media(max-width:$md6) {
-      // 
-      background-position: top 0 right 13%;
-    }
+  @media(max-width: $md3) {
+    background-position: center;
   }
 
+  @media(max-width:$md5) {
+    min-height: 430px;
+    padding: 0;
+    padding: 0;
+    background-position: top 0 right 15%;
+    background-size: 250%;
+  }
+
+  @media(max-width:$md6) {
+    min-height: 330px;
+    background-position: top 0 right 13%;
+  }
 
   &__logo {
     max-width: 497px;

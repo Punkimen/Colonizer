@@ -99,19 +99,36 @@
 }
 
 .popup {
+  position: relative;
   max-width: 570px;
   width: 100%;
-  border: 7px solid #fff;
+  // border: 7px solid #fff;
   padding: 50px 20px 50px 40px;
   margin: 0 auto;
   display: none;
 
   @media(max-width:$md5) {
+    // border: 3px solid #fff;
     padding: 50px 15px 50px 15px;
   }
 
   &.show {
     display: block;
+  }
+
+  &__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 7px solid #FFFFFF;
+    filter: blur(4px);
+    background: transparent;
+
+    @media(max-width:$md5) {
+      border: 3px solid #fff;
+    }
   }
 
   &__content {

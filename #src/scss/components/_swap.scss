@@ -95,6 +95,7 @@
 
     @media(max-width: $md5) {
       border: 3px solid #FFFFFF;
+      filter: blur(3px);
     }
   }
 
