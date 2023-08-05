@@ -1,9 +1,5 @@
 .footer {
   padding: 100px 0 200px;
-  background-image: url(../img/planet_3.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
-  background-size: contain;
   position: relative;
 
   @media(max-width:$md4) {
@@ -40,28 +36,6 @@
         width: 30px;
       }
     }
-  }
-}
-
-.meteor {
-  position: absolute;
-  right: 20%;
-  bottom: 135px;
-  max-width: 447px;
-  width: 50%;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  @media(max-width:$md3) {
-    right: 10%;
-  }
-
-  @media(max-width:$md4) {
-    display: none;
   }
 }
 

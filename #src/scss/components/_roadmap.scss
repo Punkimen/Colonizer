@@ -2,33 +2,33 @@
   padding-bottom: 350px;
   position: relative;
 
-  @media(max-width:$md2) {
+  @media(max-width: $md2) {
     padding-bottom: 250px;
   }
 
-  @media(max-width:$md3) {
+  @media(max-width: $md3) {
     padding-bottom: 160px;
   }
 
-  @media(max-width:$md4) {
+  @media(max-width: $md4) {
     padding-bottom: 70px;
   }
 
   &__elipse {
     position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(0, -35%);
-    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     min-width: 450px;
     overflow: hidden;
 
     img {
-      max-width: 1125px;
+      max-width: 120%;
       width: 100%;
       height: auto;
 
-      @media(max-width:$md2) {
+      @media(max-width: $md2) {
         position: relative;
         right: -50%;
       }
@@ -38,11 +38,11 @@
   &__header {
     margin-bottom: 180px;
 
-    @media(max-width:$md2) {
+    @media(max-width: $md2) {
       margin-bottom: 120px;
     }
 
-    @media(max-width:$md4) {
+    @media(max-width: $md4) {
       margin-bottom: 60px;
     }
   }
@@ -52,18 +52,18 @@
     justify-content: space-between;
     padding-right: 10px;
 
-    @media(max-width:$md2) {
+    @media(max-width: $md2) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 50px;
     }
 
-    @media(max-width:$md4) {
+    @media(max-width: $md4) {
       gap: 40px 25px;
       padding-right: 0;
     }
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       padding: 0 20px;
       display: block;
     }
@@ -76,15 +76,15 @@
     width: 100%;
     padding: 0 5px 40px 0;
 
-    @media(max-width:$md2) {
+    @media(max-width: $md2) {
       max-width: 100%;
     }
 
-    @media(max-width:$md4) {
+    @media(max-width: $md4) {
       border: 3px solid #FFFFFF;
     }
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       max-width: 350px;
       margin: 0 auto;
     }
@@ -92,11 +92,11 @@
     &:not(:last-child) {
       margin-right: 20px;
 
-      @media(max-width:$md2) {
+      @media(max-width: $md2) {
         margin: 0;
       }
 
-      @media(max-width:$md5) {
+      @media(max-width: $md5) {
         margin: 0 auto 30px;
       }
     }
@@ -116,7 +116,7 @@
       width: 56px;
       height: 56px;
 
-      @media(max-width:$md4) {
+      @media(max-width: $md4) {
         font-size: 28px;
       }
     }
@@ -125,7 +125,7 @@
       top: 15px;
       left: 20px;
 
-      @media(max-width:$md4) {
+      @media(max-width: $md4) {
         left: 10px;
         top: 10px;
       }
@@ -142,7 +142,7 @@
     font-weight: bold;
     margin-bottom: 30px;
 
-    @media(max-width:$md4) {
+    @media(max-width: $md4) {
       font-size: 32px;
       padding-left: 70px;
     }

@@ -23,7 +23,7 @@
       width: 100%;
       height: auto;
 
-      @media(max-width:$md2) {
+      @media(max-width: $md2) {
         position: relative;
         left: -50%;
       }
@@ -46,11 +46,11 @@
   &__header {
     margin-bottom: 200px;
 
-    @media(max-width:$md2) {
+    @media(max-width: $md2) {
       margin-bottom: 100px;
     }
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       margin-bottom: 70px;
     }
   }
@@ -61,11 +61,11 @@
     display: flex;
     margin: 0 auto 140px;
 
-    @media(max-width:$md2) {
+    @media(max-width: $md2) {
       margin-bottom: 70px;
     }
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       margin-bottom: 30px;
     }
   }
@@ -77,15 +77,15 @@
     input {
       padding: 20px 40px;
 
-      @media(max-width:$md3) {
+      @media(max-width: $md3) {
         font-size: 18px;
       }
 
-      @media(max-width:$md5) {
+      @media(max-width: $md5) {
         font-size: 14px;
       }
 
-      @media(max-width:$md6) {
+      @media(max-width: $md6) {
         font-size: 10px;
       }
     }
@@ -105,20 +105,21 @@
     width: 100%;
     cursor: pointer;
 
-    @media(max-width:$md2) {
+    @media(max-width: $md2) {
       max-width: fit-content;
     }
 
-    @media(max-width:$md3) {
+    @media(max-width: $md3) {
       font-size: 18px;
 
       svg {
         width: 20px;
         height: 20px;
+
       }
     }
 
-    @media(max-width:$md4) {
+    @media(max-width: $md4) {
       padding: 20px 15px;
     }
 
@@ -130,11 +131,15 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: #BA60FE;
+      background: var(--color-primary);
       filter: blur(4.5px);
     }
 
-    &>* {
+    svg {
+      fill: #fff;
+    }
+
+    & > * {
       position: relative;
       z-index: 2;
     }
@@ -142,7 +147,7 @@
     span {
       margin-right: 10px;
 
-      @media(max-width:$md4) {
+      @media(max-width: $md4) {
         display: none;
       }
     }
@@ -157,7 +162,10 @@
     justify-content: space-between;
     max-width: 1500px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 92px;
+    @media(max-width: $md5) {
+      margin-bottom: 120px;
+    }
   }
 
   &__stat-item {
@@ -174,7 +182,7 @@
     width: 67px;
     margin: 0 auto 40px;
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       width: 33px;
       height: 165px;
       margin: 0 auto 10px;
@@ -193,7 +201,7 @@
       background: rgba(205, 219, 255, 0.5);
       filter: blur(9.5px);
 
-      @media(max-width:$md5) {
+      @media(max-width: $md5) {
         filter: blur(2.5px);
       }
 
@@ -205,10 +213,10 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(180deg, #A32DFC 0%, #59D0F0 100%);
+    background: linear-gradient(180deg, #0083E2 0%, #59D0F0 100%);
     filter: blur(4.5px);
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       filter: blur(2.5px);
     }
   }
@@ -231,12 +239,80 @@
   &__stat-label {
     line-height: 1.2;
 
-    @media(max-width:$md5) {
+    @media(max-width: $md5) {
       position: absolute;
       top: calc(100% + 40px);
       left: 50%;
       white-space: nowrap;
       transform: translate(-54%, 0%) rotate(-90deg)
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    @media(max-width: $md5) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      min-width: 220px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &:not(:last-child) {
+        margin-right: 39px;
+        @media(max-width: $md5) {
+          margin-right: 0;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+}
+
+.tokenomics-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  @media(max-width: $md5) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__value {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+      @media(max-width: $md5) {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__value-big {
+    white-space: nowrap;
+    font-size: 64px;
+    margin-bottom: 51px;
+    @media(max-width: $md4) {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__value-small {
+    font-size: 32px;
+    @media(max-width: $md4) {
+      font-size: 16px;
     }
   }
 }

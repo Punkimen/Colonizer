@@ -6,15 +6,16 @@ $md5: 568px;
 $md6: 412px;
 
 :root {
-    --color-primary: #BA60FE;
-    --color-dark: #111111;
+  --color-primary: #66B6FF;
+  --color-secondary: #83CBFF;
+  --color-dark: #111111;
 
 }
 
 html,
 body {
-    height: 100%;
-    box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
 
 }
 
@@ -22,9 +23,9 @@ body {
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -33,192 +34,214 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    margin: 0;
-    padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    font-family: "gothic", serif;
-    color: #fff;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.9;
-    background: var(--color-dark);
-    overflow-x: hidden !important;
-    background-image: url(../img/stars_bg.png);
-    background-size: cover;
-    background-repeat: repeat-y;
+  font-family: "gothic", serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  background: var(--color-dark);
+  overflow-x: hidden !important;
+  background-image: url(../img/stars_bg.png);
+  background-size: cover;
+  background-repeat: repeat-y;
 
-    @media(max-width:$md4) {
-        font-size: 18px;
-        line-height: 1.5;
-    }
+  @media(max-width: $md4) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
-    @media(max-width:$md5) {
-        font-size: 15px;
-    }
+  @media(max-width: $md5) {
+    font-size: 15px;
+  }
 
-    &.overlay {
-        height: 100vh;
-        overflow: hidden;
-    }
+  &.overlay {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.page {
+  padding-top: 115px;
+  background-image: url(../img/footer_bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  overflow: hidden;
+  @media(max-width: $md5){
+    padding-top: 80px;
+  }
 }
 
 ul,
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    position: relative;
-    padding: 0 20px;
-    max-width: 1760px;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 5;
+  position: relative;
+  padding: 0 20px;
+  max-width: 1660px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 5;
 }
 
 .section__header {
-    position: relative;
-    z-index: 2;
-    padding: 10px 0;
-    background: var(--color-dark);
-    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+  padding: 10px 0;
+  background: var(--color-dark);
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 .section-title {
-    font-size: 128px;
-    line-height: 157px;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
 
-    @media(max-width:$md2) {
-        font-size: 100px;
-        line-height: 1.2;
-    }
+  @media(max-width: $md2) {
+    font-size: 100px;
+    line-height: 1.2;
+  }
 
-    @media(max-width:$md3) {
-        font-size: 80px;
-        line-height: 1.2;
-    }
+  @media(max-width: $md3) {
+    font-size: 80px;
+    line-height: 1.2;
+  }
 
-    @media(max-width:$md4) {
-        font-size: 60px;
-        line-height: 1.2;
-    }
+  @media(max-width: $md4) {
+    font-size: 60px;
+    line-height: 1.2;
+  }
 
-    @media(max-width:$md5) {
-        font-size: 40px;
-        line-height: 1.2;
-    }
+  @media(max-width: $md5) {
+    font-size: 40px;
+    line-height: 1.2;
+  }
 }
 
 .back-layer {
-    position: relative;
+  position: relative;
 
 
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50px;
-        left: 60px;
-        width: 100%;
-        height: 100%;
-        border: 7px solid rgba(186, 96, 254, 0.8);
-        filter: blur(13.5px);
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 100%;
+    height: 100%;
+    border: 7px solid var(--color-primary);
+    filter: blur(13.5px);
 
-        @media(max-width:$md3) {
-            border: 3px solid rgba(186, 96, 254, 0.8);
-            top: 15px;
-            left: 30px;
-            filter: blur(4.5px);
-        }
-
-        @media(max-width:$md6) {
-            top: 10px;
-            left: 15px;
-        }
+    @media(max-width: $md3) {
+      border: 3px solid var(--color-primary);
+      top: 15px;
+      left: 30px;
+      filter: blur(4.5px);
     }
+
+    @media(max-width: $md6) {
+      top: 10px;
+      left: 15px;
+    }
+  }
 }
 
 .btn {
-    display: block;
-    max-width: fit-content;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
-    background: #BA60FE;
-    border-radius: 100px;
-    padding: 10px 40px 13px;
-    box-shadow: 10px 17px 35px -5px rgba(255, 255, 255, 0.3);
-    transition: all ease .2s;
+  display: block;
+  max-width: fit-content;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  background: var(--color-primary);
+  border-radius: 100px;
+  padding: 10px 40px 13px;
+  //box-shadow: 10px 17px 35px -5px rgba(255, 255, 255, 0.3);
+  transition: all ease .2s;
+  text-align: center;
+  @media(max-width: $md5) {
+    font-size: 15px;
+  }
 
-    @media(max-width:$md5) {
-        font-size: 15px;
-    }
+  &:hover {
+    background: var(--color-secondary);
+  }
 
-    &:hover {
-        box-shadow: 0px 17px 35px 5px rgba(255, 255, 255, 0.3);
-    }
+  &_black {
+    background: var(--color-dark);
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.btn-reset {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
 }
 
 .input-block {
-    position: relative;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
+    height: 100%;
+    border: 7px solid var(--color-primary);
+    filter: blur(4.5px);
 
-    &::before {
-        content: "";
-        display: block;
-        display: block;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        border: 7px solid rgba(186, 96, 254, 0.8);
-        filter: blur(4.5px);
+    @media(max-width: $md4) {
+      border: 3px solid var(--color-primary);
+    }
+  }
 
-        @media(max-width:$md4) {
-            border: 3px solid rgba(186, 96, 254, 0.8);
-        }
+  input {
+    font-size: inherit;
+    padding: 17px 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    z-index: 2;
+
+    @media(max-width: $md3) {
+      font-size: inherit;
     }
 
-    input {
-        font-size: inherit;
-        padding: 17px 20px;
-        display: block;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        border: none;
-        outline: none;
-        background: none;
-        position: relative;
-        z-index: 2;
-
-        @media(max-width:$md3) {
-            font-size: inherit;
-        }
-
-        @media(max-width:$md4) {
-            padding: 15px 10px;
-        }
-
-        &::placeholder {
-            color: #fff;
-        }
+    @media(max-width: $md4) {
+      padding: 15px 10px;
     }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
 }

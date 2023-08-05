@@ -45,7 +45,7 @@
 			e.preventDefault();
 			const id = smoothLink.getAttribute("scroll-href");
 
-			document.querySelector(id).scrollIntoView({
+			document.querySelector(id)?.scrollIntoView({
 				behavior: "smooth",
 				block: "start",
 			});
@@ -143,28 +143,28 @@
 	});
 
 	// select choose option start
-	const fromToken = document.querySelector("#from-token");
-	const inToken = document.querySelector("#in-token");
-	const optionsInner = document.querySelector("#modal-token");
+	/*	const fromToken = document.querySelector("#from-token");
+        const inToken = document.querySelector("#in-token");
+        const optionsInner = document.querySelector("#modal-token");
 
-	fromToken.addEventListener("click", (e) => {
-		optionsInner.classList.remove("in");
-		optionsInner.classList.add("from");
-	});
-	inToken.addEventListener("click", (e) => {
-		optionsInner.classList.remove("from");
-		optionsInner.classList.add("in");
-	});
-	optionsInner.addEventListener("click", (e) => {
-		if (e.target.closest(".select-option")) {
-			const innerValue = e.target.closest(".select-option").innerHTML;
-			if (optionsInner.classList.contains("in")) {
-				inToken.querySelector(".select__value").innerHTML = innerValue;
-			} else if (optionsInner.classList.contains("from")) {
-				fromToken.querySelector(".select__value").innerHTML = innerValue;
-			}
-			closePopup();
-		}
-	});
+        fromToken.addEventListener("click", (e) => {
+            optionsInner.classList.remove("in");
+            optionsInner.classList.add("from");
+        });
+        inToken.addEventListener("click", (e) => {
+            optionsInner.classList.remove("from");
+            optionsInner.classList.add("in");
+        });
+        optionsInner.addEventListener("click", (e) => {
+            if (e.target.closest(".select-option")) {
+                const innerValue = e.target.closest(".select-option").innerHTML;
+                if (optionsInner.classList.contains("in")) {
+                    inToken.querySelector(".select__value").innerHTML = innerValue;
+                } else if (optionsInner.classList.contains("from")) {
+                    fromToken.querySelector(".select__value").innerHTML = innerValue;
+                }
+                closePopup();
+            }
+        });*/
 }
 // popups end
