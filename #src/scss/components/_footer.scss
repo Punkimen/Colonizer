@@ -1,23 +1,29 @@
 .footer {
-  padding: 100px 0 200px;
+  padding: 100px 0 130px;
   position: relative;
-
-  @media(max-width:$md4) {
+  min-height: 500px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  @media(max-width: $md4) {
     padding: 70px 0 70px;
   }
 
-  @media(max-width:$md5) {
+  @media(max-width: $md5) {
     padding: 70px 0 50px;
     background-size: 100%;
   }
 
-  &__social {}
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
 
   &__social-elem {
     &:not(:last-child) {
-      margin-bottom: 50px;
+      margin-right: 50px;
 
-      @media(max-width:$md4) {
+      @media(max-width: $md4) {
         margin-bottom: 20px;
       }
     }
@@ -26,17 +32,21 @@
 
   &__social-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
 
     svg {
       display: block;
-      margin-right: 20px;
+      margin-bottom: 20px;
 
-      @media(max-width:$md4) {
+      @media(max-width: $md4) {
         width: 30px;
       }
     }
   }
 }
 
-.container {}
+.container {
+}

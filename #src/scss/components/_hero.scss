@@ -142,7 +142,7 @@
   width: 100%;
   padding: 14px 22px 30px;
   position: relative;
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.8);
   font-size: 20px;
   color: var(--color-dark);
   @media(max-width: $md4) {
@@ -171,11 +171,19 @@
 
   &__progress-line {
     position: absolute;
-    top: -4px;
+    top: 0;
+    bottom: 0;
     left: -4px;
-    width: calc(34% + 4px);
-    height: calc(100% + 4px);
+    border-radius: 14.5px;
+    width: calc(33.3% + 4px);
+    height: 100%;
     background: var(--color-secondary);
+    z-index: 3;
+    &_2 {
+      width: calc(66.6% + 4px);
+      background:#B4DAFE ;
+      z-index: 2;
+    }
   }
 
   &__progress-value {
@@ -202,6 +210,7 @@
 
   &__wallet {
     display: flex;
+    margin-bottom: 12px;
   }
 
   &__wallet-value {
