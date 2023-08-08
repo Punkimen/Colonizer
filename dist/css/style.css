@@ -412,7 +412,7 @@ li {
 .stages {
   max-width: 375px;
   width: 100%;
-  padding: 14px 22px 30px;
+  padding: 22px 22px 30px;
   position: relative;
   background: rgba(255, 255, 255, 0.8);
   font-size: 20px;
@@ -422,11 +422,12 @@ li {
 .stages__label {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .stages__items {
   display: flex;
-  margin-bottom: 28px;
+  margin-bottom: 5px;
 }
 
 .stages__progress {
@@ -437,6 +438,30 @@ li {
   background: #fff;
   overflow: hidden;
   margin-bottom: 7px;
+}
+
+.stages__progress::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 33.3%;
+  background-color: var(--color-primary);
+}
+
+.stages__progress::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 66.6%;
+  background-color: var(--color-primary);
 }
 
 .stages__progress-line {
@@ -451,17 +476,10 @@ li {
   z-index: 3;
 }
 
-.stages__progress-line_2 {
-  width: calc(66.6% + 4px);
-  background: #B4DAFE;
-  z-index: 2;
-}
-
 .stages__progress-value {
   text-align: center;
   font-weight: bold;
-  font-size: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .stages__text {
@@ -523,8 +541,8 @@ h4.progress__title {
   top: 0;
   right: 0;
   width: 1px;
-  background: #fff;
-  height: 90px;
+  background: #000;
+  height: 55px;
 }
 
 .stage-item__label {
