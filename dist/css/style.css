@@ -542,7 +542,7 @@ h4.progress__title {
   right: 0;
   width: 1px;
   background: #000;
-  height: 55px;
+  bottom: 0;
 }
 
 .stage-item__label {
